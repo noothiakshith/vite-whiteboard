@@ -20,12 +20,14 @@ function Board() {
 
 let roughCanvas = rough.canvas(canvas);
 let generator = roughCanvas.generator;
-let rect1 = generator.rectangle(10, 10, 100, 100);
-let rect2 = generator.rectangle(10, 120, 100, 100, {fill: 'red'});
+let rect1 = generator.rectangle(10, 10, 100, 100,{roughness:0.5,fill:"green"});
+let rect2 = generator.rectangle(10, 120, 100, 100, {fill: 'red',roughness:1.2,strokeWidth:4});
 let rect3 = generator.rectangle(0,0,300,300);
+let line1 = generator.line(11,11,100,100);
 roughCanvas.draw(rect1);
 roughCanvas.draw(rect2);
 roughCanvas.draw(rect3);
+roughCanvas.draw(line1)
   }, []);
 
   return (
