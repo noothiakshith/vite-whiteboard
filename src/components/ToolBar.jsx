@@ -1,5 +1,5 @@
 import React from 'react';
-import useBoardStore from '../store/UseBoardStore';
+import useBoardStore from '../../stores/boardStore';
 import { FaPaintBrush, FaMinus, FaSquare, FaCircle, FaArrowRight, FaFont, FaEraser, FaUndo, FaRedo, FaDownload } from 'react-icons/fa';
 import classNames from 'classnames';
 

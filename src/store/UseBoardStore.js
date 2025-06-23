@@ -11,7 +11,7 @@ const useBoardStore = create((set, get) => ({
   // Actions
   setActiveTool: (tool) => set({ 
     activeTool: tool, 
-    toolAction: 'none'
+    toolAction: 'none' 
   }),
 
   setToolAction: (action) => set({ toolAction: action }),
